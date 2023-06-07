@@ -1,0 +1,14 @@
+solo la prima pagina deve avere un 100vh, le altre no tanto si scrolla in basso
+
+1 PAGE
+
+MENU
+
+BACKROUND
+metto una div che width 100% e height 100vh, e metto su questa div la img backround con cover cosi non si strecha
+
+MENU
+
+
+creo una div display flex che contiene una div che contiene il testo e una div che contiene l' icon, le flex hanno tutte flex 1 ma sui 600px la flex testo ha piu flex perche' cosi
+quando il testo e l img si avvicinano il testo non va a sbattere contro il flex dell' altra div , poi con altri media cambio anche il margine del testo ed img

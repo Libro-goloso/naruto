@@ -1,0 +1,1258 @@
+/* prima pagina*/
+
+@keyframes fadein {
+    from
+    {
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
+
+
+h1, h2, h3, h4, p, img, div
+{
+    user-select: none;
+}
+
+
+img
+{
+    filter: saturate(200%);
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/*backround*/
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    position: relative; /*addato*/
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(0, 0, 0);
+}
+
+a
+{
+    text-decoration: none;
+}
+
+
+.page1-div
+{
+    width: 100vw;
+    height: 100vh; 
+    height: -webkit-fill-available; /*addato*/
+    background-image: url(img/Capturgtgge.PNGtgtggtg.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/*menu responsive*/
+
+.menu
+{
+    flex: .1;
+    display: flex;
+}
+
+.div-naruto
+{
+    flex: 1;
+}
+
+.div-naruto > h3
+{
+    color: white;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-left: 10%;
+    margin-top: 15px;
+    animation: fadein 1.25s;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.div-img
+{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.div-img > img
+{
+    width: 40px;
+    height: 35px;
+    margin-left: 50%;
+    margin-top: 15px;
+    animation: fadein 1.25s;
+}
+
+@media(min-width:650px)
+{
+    .div-naruto > h3
+    {
+        font-size: 2rem;
+    }
+}
+
+
+
+
+@media(max-width:600px)
+{
+    .div-img
+    {
+        flex: .4;
+    }
+
+    .div-img > img
+{
+    
+    margin-left: 20%;
+    margin-top: 10px;
+}
+}
+
+
+@media(min-width:1200px)
+{
+    .div-img
+    {
+        flex: .4;
+    }
+    .div-naruto > h3
+    {
+        margin-left: 20%;
+    }
+}
+
+@media(max-width:1000px)
+{   
+    .page1-div
+    {
+        background-image: url(img/2nd-back-760.PNG);
+        background-position: left;
+    }
+}
+
+
+
+
+/*testo centrale*/
+
+#testo-gigante
+{
+    
+    
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.inner-div
+{
+    border: 1px;
+    height: fit-content;
+    width: 80%;
+    max-width: 580px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inner-div > h2
+{
+    font-size: 2.4rem;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    animation: fadein 1.25s;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.inner-div > p
+{
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    color: white;
+    animation: fadein 1.25s;
+    text-align: center;
+    margin-bottom: 10px;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.inner-div > a
+{
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    animation: fadein 1.25s;
+    width: 90%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-width: 145px;
+    border-radius: 500px;
+    text-align: center;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+@media(max-width:500px)
+{
+
+    .inner-div > h2
+    {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: white;
+    }
+
+    .inner-div > p
+    {
+        font-size: 1rem;
+    }
+    
+}
+
+.page2-div
+{
+    width: 100%;
+    height: fit-content;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.page2-div > h1
+{
+    color: white;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 35px;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+
+/*madara 3 flex layout*/
+
+
+.flex-layout
+{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+#madara-content-section
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+#madara-content-section .card
+
+{
+    flex: 1;
+    margin: 20px 58px;
+}
+
+
+
+.madara-container
+{
+    margin-left: 2.5%;
+    width: 90%;
+    max-width: 480px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    transition: all .0s ;
+    border: 13px solid rgb(0, 0, 0);
+}
+
+.madara-img-div
+{
+    background-color: rgb(0, 0, 0);
+    flex: 1;
+}
+
+.madara-div-text
+{
+    flex: 1;
+}
+
+.madara-img
+{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    transition: all .0s ;
+}
+
+
+
+.madara-main-text
+{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    transition: all .0s;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.madara-desc
+{
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-top: 1rem;
+    color: white;
+    transition: all .0s;
+}
+
+.madara-read-more
+{
+    font-size: .95rem;
+    font-weight: 500;
+    color: white;
+    transition: all .0s;
+    margin-top: 10px;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.madara-container:hover
+{
+    border: 13px solid white;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.madara-container:hover .madara-img
+{
+    transform: rotateY(360deg);
+    border-radius: 10px;
+    transition: all .25s linear;
+    
+}
+
+.madara-container:hover .madara-div-text
+{
+    background-color: white;
+    transition: all .0s linear;
+}
+
+.madara-container:hover .madara-read-more
+{
+    color: black;
+    transform: rotateY(360deg);
+    transition: all .25s linear;
+}
+
+.madara-container:hover .madara-main-text
+{
+    color: black;
+    transform: rotateY(360deg);
+    transition: all .25s linear;
+}
+
+.madara-container:hover .madara-desc
+{
+    color: black;
+    transform: rotateY(360deg);
+    transition: all .25s linear;
+}
+
+.madara-container:hover .madara-img-div
+{
+    background-color: white;
+}
+
+@media (max-width:1400px)
+{
+
+#madara-content-section .card
+{
+    flex: 1;
+    margin: 20px 20px;
+}
+
+}
+
+
+
+@media (max-width:1150px)
+{
+    #madara-content-section
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .madara-container
+    {
+        max-width: 700px;
+    }
+    .flex-layout
+    {
+        margin-top: 15px;
+    }
+    
+    #madara-content-section .card
+{
+    flex: 1;
+    margin: 40px 20px;
+}
+}
+
+@media (max-width:255px)
+{
+    .madara-desc
+    {
+        font-size: 0.8rem;
+    }
+    
+    .madara-read-more
+    {
+        font-size: 0.8rem;
+    }
+}
+
+
+#characthers
+{
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 40px;
+    user-select: none;
+    font-size: 3em;
+}
+
+@media (max-width:625px)
+{
+    #characthers
+    {
+        font-size: 2em;
+    }
+}
+
+
+@media (max-width:520px)
+{
+    .madara-container
+    {
+    margin-left: 1.2%;
+    }
+}
+
+
+@media (max-width:380px)
+{
+    .madara-container
+    {
+    margin-left: 1%;
+    }
+}
+
+@media (max-width:350px)
+{
+    .madara-container
+    {
+    margin-left: 0.75%;
+    }
+}
+
+
+@media (max-width:300px)
+{
+    .madara-container
+    {
+    margin-left: 0.5%;
+    }
+}
+
+@media (max-width:250px)
+{
+    .madara-container
+    {
+    margin-left: 0%;
+    }
+}
+
+
+/*naruto*/
+
+
+/*naruto-grid-div*/
+
+.naruto-div-grid
+{
+    width: 100%;
+    height: fit-content;
+}
+
+/*naruto-grid-layout*/
+
+.naruto-flex
+{
+    
+    display: grid;
+    max-width: 90%;
+    margin: 40px auto;
+    padding: 10px 20px; /* 90px*/
+    gap: 1.5em;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); /* ogni card avra' almeno width 250px e occupera uno spazio 1fr, quindi ogni card avra' lo stesso spazio, 1fr e' come flex:1*/
+}
+
+.naruto-card
+{
+    width: 100%;
+    height: fit-content;
+}
+
+
+
+/*naruto-inside-logic*/
+
+
+.boruto-container
+{
+    
+    border-radius: 1px;
+    position: relative;
+    height: 300px;
+    width: 100%;
+    border: solid 2px;
+    overflow: hidden;
+    
+}
+
+.boruto /*img*/
+{
+    
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    transition: all .2s ease-out;
+    border-radius: 1px;
+    overflow: hidden;
+    min-width: 250px;
+}
+
+.play
+{
+    position: absolute;
+    width: 100%;
+    height: 0;
+    object-fit: cover;
+    transition: all .15s;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    transition: all .3s;
+    color: transparent;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    
+}
+
+
+
+.play h3
+{
+    margin-top: 3%;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.play h4
+{
+    margin-top: 0%;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+
+.boruto-container:hover
+{
+    cursor: pointer;
+    
+}
+
+
+.play:hover
+{
+    height: 33.3%;
+    cursor: pointer;
+    color: white;
+}
+
+
+.boruto:hover + .play
+{
+    height: 33.3%;
+    color: white;
+}
+
+
+.boruto-container:hover > .boruto
+{
+    transform: scale(1.35)  /*rotateY(360deg) */;
+}
+
+
+@media(max-width:550px)
+{
+    .naruto-flex
+{
+    padding: 10px 65px;
+    gap: 2em;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); /* ogni card avra' almeno width 250px e occupera uno spazio 1fr, quindi ogni card avra' lo stesso spazio, 1fr e' come flex:1*/
+}
+}
+
+@media(max-width:400px)
+{
+.play h3
+{
+    margin-top: 5%;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.play h4
+{
+    margin-top: 0%;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+}
+
+@media(max-width:350px)
+{
+
+    .naruto-flex
+{
+    
+    display: grid;
+    max-width: 90%;
+    margin: 40px auto;
+    padding: 10px 20px; /* 90px*/
+    gap: 1.5em;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr)); /* ogni card avra' almeno width 250px e occupera uno spazio 1fr, quindi ogni card avra' lo stesso spazio, 1fr e' come flex:1*/
+}
+
+}
+
+@media(max-width:220px)
+{
+.play h3
+{
+    margin-top: 8%;
+    font-size: .9em;
+    font-weight: 500;
+}
+
+.play h4
+{
+    margin-top: 2%;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+}
+
+/*movies*/
+
+
+/*movies-text*/
+
+#movies-text
+{
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 37.5px;
+    user-select: none;
+    font-size: 3em;
+}
+
+@media (max-width:625px)
+{
+    #movies-text
+    {
+        font-size: 2em;
+    }
+}
+
+
+/*movies*/
+
+
+.movie-naruto-div-grid
+{
+    width: 100%;
+    height: fit-content;
+}
+
+/*naruto-grid-layout*/
+
+.movie-naruto-flex
+{
+    
+    display: grid;
+    max-width: 80%;
+    margin: 40px auto;
+    padding: 10px 20px;
+    gap: 1.5em;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr)); /* ogni card avra' almeno width 250px e occupera uno spazio 1fr, quindi ogni card avra' lo stesso spazio, 1fr e' come flex:1*/
+}
+
+.movie-naruto-card
+{
+    width: 100%;
+    height: fit-content;
+}
+
+
+
+@media(max-width:550px)
+{
+    .movie-naruto-flex
+{
+    padding: 10px 65px;
+    gap: 2em;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); /* ogni card avra' almeno width 250px e occupera uno spazio 1fr, quindi ogni card avra' lo stesso spazio, 1fr e' come flex:1*/
+}
+}
+
+.movie-madara-container
+{
+    margin-left: 2.5%;
+    width: 90%;
+    max-width: 480px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    transition: all .0s ;
+    border: 13px solid rgb(0, 0, 0);
+}
+
+.movie-madara-img-div
+{
+    background-color: rgb(0, 0, 0);
+    flex: 1;
+}
+
+.movie-madara-div-text
+{
+    flex: 1;
+}
+
+.movie-madara-img
+{
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+    transition: all .0s ;
+}
+
+
+
+.movie-madara-main-text
+{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    transition: all .0s
+}
+
+.movie-madara-desc
+{
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-top: .2rem;
+    color: white;
+    transition: all .0s;
+}
+
+.movie-madara-read-more
+{
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    transition: all .0s;
+    margin-top: .2rem;
+}
+
+
+
+.movie-madara-container:hover
+{
+    border: 13px solid white;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all .2s
+}
+
+.movie-madara-container:hover .movie-madara-img
+{
+    transform: rotateY(360deg);
+    border-radius: 10px;
+    transition: all .3s linear
+}
+
+.movie-madara-container:hover .movie-madara-div-text
+{
+    background-color: white;
+    transition: all .0s
+}
+
+.movie-madara-container:hover .movie-madara-read-more
+{
+    color: black;
+    transform: rotateY(360deg);
+    transition: all .3s linear
+}
+
+.movie-madara-container:hover .movie-madara-main-text
+{
+    color: black;
+    transform: rotateY(360deg);
+    transition: all .3s linear
+}
+
+.movie-madara-container:hover .movie-madara-desc
+{
+    color: black;
+    transform: rotateY(360deg);
+    transition: all .3s linear
+}
+
+.movie-madara-container:hover .movie-madara-img-div
+{
+    background-color: white;
+}
+
+@media (max-width:1400px)
+{
+
+#movie-madara-content-section .movie-card
+{
+    flex: 1;
+    margin: 20px 20px;
+}
+
+}
+
+
+
+@media (max-width:1150px)
+{
+    #movie-madara-content-section
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .movie-madara-container
+    {
+        max-width: 700px;
+    }
+    .movie-flex-layout
+    {
+        margin-top: 15px;
+    }
+    
+    #movie-madara-content-section .movie-card
+{
+    flex: 1;
+    margin: 40px 20px;
+}
+}
+
+@media (max-width:1560px)
+{
+    .movie-madara-container
+    {
+        max-width: 360px;
+    }
+
+    .movie-naruto-flex
+{
+    
+    display: grid;
+    max-width: 80%;
+    margin: 40px auto;
+    padding: 10px 0px;
+    gap: 0em;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr)); /* ogni card avra' almeno width 250px e occupera uno spazio 1fr, quindi ogni card avra' lo stesso spazio, 1fr e' come flex:1*/
+}
+}
+
+
+@media (max-width:1500px)
+{
+    .movie-naruto-flex
+    {
+    
+    display: grid;
+    max-width: 100%;
+    margin: 40px auto;
+    padding: 10px 20px;
+    gap: 1.5em;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr)); /* ogni card avra' almeno width 250px e occupera uno spazio 1fr, quindi ogni card avra' lo stesso spazio, 1fr e' come flex:1*/
+    }
+
+.movie-naruto-card
+    {
+    width: 100%;
+    height: fit-content;
+    }   
+
+.movie-madara-container
+    {
+    margin-left: 2.5%;
+    width: 90%;
+    max-width: 480px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    transition: all .2s ;
+    border: 13px solid rgb(0, 0, 0);
+    }   
+}
+
+
+
+
+
+@media (max-width:1288px)
+{
+    .movie-naruto-flex
+    {
+        
+        display: grid;
+        max-width: 90%;
+        margin: 40px auto;
+        padding: 10px 20px;
+        gap: 1.5em;
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); /* ogni card avra' almeno width 250px e occupera uno spazio 1fr, quindi ogni card avra' lo stesso spazio, 1fr e' come flex:1*/
+    }
+
+    .movie-madara-container
+    {
+        max-width: 480px;
+    }
+}
+
+
+@media (max-width:795px)
+{
+    .movie-naruto-flex
+    {
+        
+        display: grid;
+        max-width: 80%;
+        margin: 40px auto;
+        padding: 10px 20px;
+        gap: 1.5em;
+        max-width: 60vw;
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); /* ogni card avra' almeno width 250px e occupera uno spazio 1fr, quindi ogni card avra' lo stesso spazio, 1fr e' come flex:1*/
+    }
+}
+
+@media (max-width:700px)
+{
+    .movie-naruto-flex
+    {
+        
+        display: grid;
+        max-width: 80%;
+        margin: 40px auto;
+        padding: 10px 0px;
+        gap: 1.5em;
+        max-width: 50vh;
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); /* ogni card avra' almeno width 250px e occupera uno spazio 1fr, quindi ogni card avra' lo stesso spazio, 1fr e' come flex:1*/
+    }
+}
+
+
+
+@media (max-width:540px)
+{
+    .movie-naruto-flex
+    {
+        
+        display: grid;
+        max-width: 80%;
+        margin: 40px auto;
+        padding: 10px 20px;
+        gap: 1.5em;
+        max-width: 50vh;
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); /* ogni card avra' almeno width 250px e occupera uno spazio 1fr, quindi ogni card avra' lo stesso spazio, 1fr e' come flex:1*/
+    }
+}
+
+
+
+@media (max-width:255px)
+{
+    .movie-madara-desc
+    {
+        font-size: 0.7rem;
+    }
+    
+    .movie-madara-read-more
+    {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width:465px)
+{
+    .movie-naruto-flex
+    {
+        
+        display: grid;
+        max-width: 80%;
+        margin: 40px auto;
+        padding: 10px 20px;
+        gap: 1.5em;
+        max-width: none;
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); /* ogni card avra' almeno width 250px e occupera uno spazio 1fr, quindi ogni card avra' lo stesso spazio, 1fr e' come flex:1*/
+    }
+}
+
+@media (max-width:380px)
+{
+    .movie-naruto-flex
+    {
+        
+        display: grid;
+        max-width: 80%;
+        margin: 40px auto;
+        padding: 10px 0px;
+        gap: 1.5em;
+        max-width: none;
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); /* ogni card avra' almeno width 250px e occupera uno spazio 1fr, quindi ogni card avra' lo stesso spazio, 1fr e' come flex:1*/
+    }
+}
+
+
+
+
+
+@media (max-width:500px)
+{
+    .movie-madara-container
+    {
+    margin-left: 1.7%;
+    }
+}
+
+
+@media (max-width:380px)
+{
+    .movie-madara-container
+    {
+    margin-left: 1.5%;
+    }
+}
+
+@media (max-width:350px)
+{
+    .movie-madara-container
+    {
+    margin-left: 0.75%;
+    }
+}
+
+
+@media (max-width:300px)
+{
+    .movie-madara-container
+    {
+    margin-left: 0.5%;
+    }
+}
+
+@media (max-width:250px)
+{
+    .movie-madara-container
+    {
+    margin-left: 0%;
+    border-left-width:11px;
+    }
+}
+
+@media (max-width:200px)
+{
+    .movie-madara-container
+    {
+    border-left-width:0px;
+    margin-left: auto;
+    }
+}
+
+
+.all-movies
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.a-h1
+{
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    user-select: none;
+    font-size: 3em;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    border-bottom: 5px solid transparent;
+    transition: all .1s linear;
+}
+
+.a-h1:hover{
+    
+    border-bottom: 5px solid;
+}
+
+
+@media (max-width:625px)
+{
+    .a-h1
+    {
+        font-size: 2em;
+    }
+}
+
+
+
+
+#footer
+{
+    height: 40vh;
+    width: 100%;
+    background-color: rgb(179, 19, 19);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/Capturgtgge.PNGtgtggtg.PNG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    text-align: center;
+    margin-top: 80px;
+}
+
+
+#text-footer
+{
+    font-size: 3em;
+    color: white;
+    font-weight: 500;
+}
+
+@media (max-width:790px)
+{
+    #text-footer
+    {
+        font-size: 2em;
+    }
+}
+
+@media (max-width:350px)
+{
+    #text-footer
+    {
+        font-size: 1.25em;
+    }
+}
